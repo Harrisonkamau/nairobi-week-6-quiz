@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app= "app">
+<head>
+	<script src="angular.min.js"></script>
+	<script src="appController.js"></script>
+	<title>Students Posts</title>
+</head>
+<body>
+	<h2>app</h2>
+	<div class="col-sm-12" ng-controller="studentController"></div>
+		<table border="0">
+			<tr ng-repeat="x in posts | filter: 'post'">
+				<td>{{x.name}}</td>
+				<td>{{x.email}}</td>
+				<td>{{x.comment}}</td>
+			</tr>
+
+		
+		</table>
+
+</body>
+</html>
+
+
+
